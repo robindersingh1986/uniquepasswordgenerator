@@ -1,0 +1,185 @@
+html(lang="en")
+  head
+    title Uncrackable Secure Passphrase &amp; Password Generator
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description" content="Generate Unique Randomized Passwords or Passphrases that will take millions of years to crack. Get secure now.")
+    meta(name="author" content="Unique Password Generator")
+    meta(name="geo.region" content="CA-ON")
+    meta(name="geo.placename" content="Ottawa, Ontario")
+    meta(name="geo.position" content="45.382014;-75.725533")
+    meta(name="ICBM" content="45.382014, -75.7255332")
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-3657386-40', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    
+    
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css',rel='stylesheet')
+    style.
+      h1,h2,h3,h4,h5,h6 { color: #317eac; }
+  body
+    div.container
+      div.page-header(id='banner')
+        div.row
+          div.col-lg-12
+            h1 Unique &amp; Secure Diceware Passphrase / Password Generator
+            p.lead The next generation password generator
+      div.spacer      
+      div.row
+        div.col-lg-7
+          div.well.bs-component
+            form.form-horizontal
+              fieldset
+                legend Generate Passwords
+                span.help-block Select your options then hit generate to create your password(s).
+                br
+                div.alert.alert-info
+                   div.progress.progress-striped.active
+                     div.progress-bar(id='pbar',style="width: 0%")
+                   p Hang on while we generate your password for you...
+
+                div.form-group
+                  label.col-lg-2.control-label(for='select') Length
+
+                  div.col-lg-10
+                    select.form-control(id="words_len")
+                      option(value='4') 4 words (x years)
+                      option(value='5') 5 words (x years)
+                      option(value='6') 6 words (x years)
+                      option(value='7') 7 words (27 million years)
+                      option(value='8') 8 words (x years)
+
+                div.form-group
+                  label.col-lg-2.control-label(for='select') Delimiter
+                  div.col-lg-10
+                    select.form-control(id="delimiter")
+                      option(value=',') Comma (,)
+                      option(value='space') Space ( )
+                      option(value='_') Underscore (_)
+
+                div.form-group
+                  label.col-lg-2.control-label(for='select') Number
+                  div.col-lg-10
+                    select.form-control(id="num_of_sets")
+                      option(value='1') Generate 1 Password
+                      option(value='5') Generate 5 Passwords
+                      option(value='10') Generate 10 Passwords
+                      option(value='20') Generate 20 Passwords
+                      option(value='50') Generate 50 Passwords
+
+                div.form-group
+                  label.col-lg-2.control-label(for='select') Password
+                  div.col-lg-10
+                    textarea.form-control(rows="5" id="textArea")
+
+                div.form-group
+                  div.col-lg-10.col-lg-offset-2
+                    button.btn.btn-success(type="button",id="generate_num") Generate Password
+                    img(id="showdice", src="images/dice2.gif",style="display:none;")
+
+        div.col-lg-5
+          h2 1 Simple Trick To Great Security
+          p Use our password generator to create secure passwords that will take millions of years to crack.
+          p Not to mention, all of this takes place over an encrypted end-to-end tunnel that makes sure your passwords are nevervisible to anyone whether locally or on during transmission of data.
+          p On top of the aforementioned points, these passwords are actually able to be memorized, so you never have to worry about forgetting what your password is for again.
+          p Use of these passwords is recommended to highly secure communications, main passwords to password vaults and those types of applications. It is not recommended to use these for regular website passwords or other logins of that nature.
+          h2 Built Using OpenSource
+          p We Use; 
+            i NodeJS, BootStrap, Apache, PHP, Python, and more
+          div.row
+            img(src="images/ssl-encryption-256-bit.jpg" alt="SSL 256 Bit Encrypted End-to-End")
+            img(src="images/bootstrap-used.jpg" alt="We use Bootstrap for our site")
+            img(src="images/node-js.jpg" alt="We use NodeJS for our site")
+      
+      div.spacer
+      div.spacer
+      div.row.marketing
+        div.col-lg-4
+          h4 Passwords Only Take Seconds To Crack!
+          p Current techniques do not create a secure enough password for today's online world, this is why we created this tool for you. We make it quick and easy to generate a password so secure it would most likely take upwards of 27 million years!
+        div.col-lg-4
+          h4 It's Very Easy To Use
+          p All you have to do is select your options, and click the generate button and we'll take care of the technical stuff and then we'll spit out your passwords or passphrases. It's literally never been easier to generate secure passwords for yourself, or your company.
+        div.col-lg-4
+          h4 Always Top Security Employed!
+          p Passwords and Passphrases should never be unencrypted during transit, we've fixed this by forcing SSL use and we never store your password locally it's generated on your own computer and then destroyed once you close the browser. How cool is that? 
+      
+      div.spacer
+      div.row.references
+        div.col-lg-4
+          h2 Another Generator?
+          p If you're not so much into the techy details of how all this works, just rest assured that the most possible security measures have been taken to ensure encrypted communication both through our site, and, when generating the passwords locally on your computer. This means that there's zero data retention, or any possibility of a third party coming in contact with the passwords we generate for you. On top of that these passwords are both memorable, and will with stand brute force attacks for literally millions of years.
+
+          p If you're into the nerdy stuff, then you'll be happy to know our site is using 256-bit encryption end-to-end, and forces SSL communications over HTTPS. The website itself is run on it's own virtual host separated from the other websites on the server. On top of that, we employ various techniques to ensure nothing you ever generate is stored on our servers after the passwords are generated.      
+
+        div.col-lg-8
+          h2 More Information
+          p You can read about this cool new technique at these links, and download your own copy of the standard diceware wordlist below to use in your own projects.
+          p
+            ul
+              li
+                a(target="blank", href="http://www.lifehacker.co.uk/2015/03/30/create-password-secure-take-nsa-27-million-years-hack" title="LifeHacker article about diceware passwords")
+                  span(style="font-weight:bold") LifeHacker :
+                  span How to Create a Password so Secure it Would Take the NSA 27 Million Years to Hack
+              li
+                a(target="blank", href="https://firstlook.org/theintercept/2015/03/26/passphrases-can-memorize-attackers-cant-guess/" title="PASSPHRASES THAT YOU CAN MEMORIZE — BUT THAT EVEN THE NSA CAN’T GUESS")
+                  span(style="font-weight:bold") Firstlook :
+                  span Passphrases that you can memorize - but that even the nsa can't guess
+          p
+            blockquote
+              i 
+                span "In other words, if an attacker knows that you are using a seven-word Diceware passphrase, and they pick seven random words from the Diceware word list to guess, there is a one in 1,719,070,799,748,422,591,028,658,176 chance that they’ll pick your passphrase each try.
+                br
+                br
+                span At one trillion guesses per second — per Edward Snowden’s January 2013 warning — it would take an average of 27 million years to guess this passphrase."
+                br
+                strong - Micah Lee
+
+      div.spacer
+      div.spacer
+    footer.footer
+      div.container
+        p.text-muted &copy; Unique Password Generator - 2015
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script.
+      $(document).ready(function(){
+        $("#generate_num").click(function(){
+          $("#showdice").show('slow');
+          var words_len = $("#words_len").val(),
+          delimiter = $("#delimiter").val(),
+          num_of_sets = $("#num_of_sets").val();
+          var times=0;
+          var progress = 100/num_of_sets,prog=0;
+          
+          function doajax()
+          {
+            var jqxhr = $.get( "/getRndNum/"+words_len+"/"+num_of_sets+"/"+delimiter, function() {                                             
+                                                        })
+                        .done(function(data) {
+                                          times++;
+                                          prog = prog+progress;
+                                          $("#pbar").css('width',prog+'%');
+                                          $("#textArea").val($("#textArea").val()+data+'\n');
+                                          if(times<num_of_sets)
+                                          {
+                                            setTimeout(function(){ doajax(times); },500);
+                                          }
+                                          else { $("#showdice").delay(1000).hide('slow'); times=0; progress = 0; }
+                                         })
+                             
+          } doajax();
+        });
+      });
+
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+    script(type="text/javascript").
+      (function(){'use strict';if(navigator.userAgent.match(/IEMobile\/10\.0/)){var msViewportStyle=document.createElement('style')
+      msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'))
+      document.querySelector('head').appendChild(msViewportStyle)}})();
+
