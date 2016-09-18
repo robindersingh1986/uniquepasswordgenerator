@@ -24,7 +24,7 @@ var express = require("express"),
 
 if(!module.parent) {
 	var http = require('http');
-	var port = process.env.PORT || 6000;
+	var port = process.env.PORT || 3300;
 	var server = http.createServer(app).listen(port,function(err){
 		if(err) { return console.error(err); }
 		console.log("******* UniquePasswordGenerator ****** running on port : "+port+" Env : "+app.get('env'));
